@@ -9,13 +9,12 @@
 </head>
 <body>
   <video width="1850" autoplay id="myVideo">
-    <source src="vids/intro.mp4" type="video/mp4">
+    <source src="vids/CSA_opening.mp4" type="video/mp4">
   </video>
   <a href="bass.html" id="bassButton"></a>
-  <a href="sax.html" id="saxButton"></a>
-  <a href="drums.html" id="drumsButton"></a>
 </body>
 <script type='text/javascript'>
+
 var count=1;
 var player=document.getElementById('myVideo');
 player.addEventListener('ended',myHandler,false);
@@ -24,7 +23,7 @@ function myHandler(e) {
   if(!e) 
   { e = window.event; }
   count++;
-  player.src="vids/menu.mp4";
+  player.src="vids/CSA_menu.mp4";
   }
 </script>
 </html>
