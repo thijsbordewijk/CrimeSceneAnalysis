@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+  <title>Virtual band</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <video width="1850" autoplay id="myVideo">
+    <source src="vids/intro.mp4" type="video/mp4">
+  </video>
+  <a href="bass.html" id="bassButton"></a>
+  <a href="sax.html" id="saxButton"></a>
+  <a href="drums.html" id="drumsButton"></a>
+</body>
+<script type='text/javascript'>
+var count=1;
+var player=document.getElementById('myVideo');
+player.addEventListener('ended',myHandler,false);
+
+function myHandler(e) {
+  if(!e) 
+  { e = window.event; }
+  count++;
+  player.src="vids/menu.mp4";
+  }
+</script>
+</html>
