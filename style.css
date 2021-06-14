@@ -1,2 +1,84 @@
 /* You don't really have to touch this style.css file. Most of the styling of the canvas is controlled via the sketch.js */
+body {
+  background-color: black ;
+}
+#page3 {
+  background-color: rgb(46, 46, 46);
+}
 
+#navButton {
+  z-index: 99;
+  position: absolute;
+  padding: 20px;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: -540px;
+  margin-left: 890px;
+  background-color: black;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#navButton:hover {
+  background-color: rgb(94, 94, 94);
+}
+i {
+  color: white;
+}
+#mainImg  {
+  margin-top: 20px;
+  margin-left: 200px;
+}
+#smokeImg {
+  z-index: -1;
+  margin-top: 200px;
+  margin-left: -2250px;
+  position: absolute;
+}
+/* :root {
+  cursor: none;
+  --cursorX: 20vw;
+  --cursorY: 20vh;
+}
+:root:before {
+  content: '';
+  display: block;
+  width: 78.2%;
+  height: 78.8%;
+  margin-top: 25px;
+  margin-left: 207px;
+  position: fixed;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 5vmax at var(--cursorX) var(--cursorY),
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,.5) 80%,
+    rgba(0,0,0,.95) 100%
+  )
+} */
+#button1 {
+  position: absolute;
+  z-index: 99;
+  display: inline-block;
+  padding: 70px;
+  border-radius: 100px;
+  margin-top: 400px;
+  margin-left: -1300px;
+}
+
+#button1 #tooltip1 {
+  visibility: hidden;
+  background-color: rgb(49, 49, 49, 0.5);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 15px ;
+  position: absolute;
+  z-index: 1;
+}
+
+#button1:hover #tooltip1 {
+  visibility: visible;
+}

@@ -8,17 +8,16 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body id="page1">
-  <video width="1890" autoplay id="myVideo">
-    <source src="vids/CSA_opening.mp4" type="video/mp4">
-  </video>
+
+<body id="page3" scroll="no" style="overflow: hidden">
+
+  <img id="mainImg" src="img/CSA_img.jpg" width="1485">
+  <img id="smokeImg" src="img/smoke.png" width="2500">
+
+  <button id="button1">
+    <span id="tooltip1">text 1</span>
+  </button>
 </body>
-<script type='text/javascript'>
 
-var count=1;
-var player=document.getElementById('myVideo');
-player.addEventListener('ended',function() {      
-window.location.href = 'menu.html';})
-
-</script>
+<script src="script.js"></script>
 </html>
