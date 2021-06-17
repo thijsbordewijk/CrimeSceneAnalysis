@@ -1,0 +1,423 @@
+@font-face {
+  font-family: 'ChicagoPolice';
+  src: url('fonts/ChicagoPolice.eot') format('eot'), /* IE9 Compat Modes */
+       url('fonts/ChicagoPolice.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/ChicagoPolice.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/ChicagoPolice.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/ChicagoPolice.eot')  format('truetype'), /* Safari, Android, iOS */
+}
+body {
+  background-color: black ;
+}
+#page3 {
+  background-color: rgb(46, 46, 46);
+}
+#navButton {
+  z-index: 99;
+  position: absolute;
+  padding: 20px;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: -540px;
+  margin-left: 890px;
+  background-color: black;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+#navButton:hover {
+  background-color: rgb(94, 94, 94);
+}
+i {
+  color: white;
+}
+#mainImg  {
+  margin-top: -5px;
+  margin-left: -6px;
+}
+#smokeImg {
+  z-index: -99;
+  margin-top: -500px;
+  margin-left: -500px;
+  position: absolute;
+}
+:root {
+  --cursorX: 1vw;
+  --cursorY: 1vh;
+}
+:root:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 69.2%;
+  position: fixed;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 5vmax at var(--cursorX) var(--cursorY),
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,.5) 80%,
+    rgba(0,0,0,.95) 100%
+  )
+}
+#button1 {
+  position: absolute;
+  z-index: 99;
+  display: inline-block;
+  padding: 50px;
+  padding-bottom: 100px;
+  border-radius: 100px;
+  margin-top: -500px;
+  margin-left: 350px;
+  background-color: transparent;
+  border-style: none;
+}
+#button1 #tooltip1 {
+  visibility: hidden;
+  font-size: 11px;
+  font-family: monospace;
+  color: black;
+  text-align: left;
+  position: absolute;
+  z-index: 1;
+  background-image: url(img/paper.jpeg);
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 150px;
+  margin-top: 150px;
+  margin-left: -100px;
+}
+#button1:hover #tooltip1 {
+  visibility: visible;
+  animation: tooltipAppear 1s linear 1 ;
+}
+#button2 {
+  position: absolute;
+  z-index: 99;
+  display: inline-block;
+  padding: 50px;
+  border-radius: 100px;
+  margin-top: -420px;
+  margin-left: 200px;
+  background-color: transparent;
+  border-style: none;
+}
+#button2 #tooltip2 {
+  visibility: hidden;
+  font-size: 11px;
+  font-family: monospace;
+  color: black;
+  text-align: left;
+  position: absolute;
+  z-index: 1;
+  background-image: url(img/paper.jpeg);
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 200px;
+  margin-top: 100px;
+  margin-left: -130px;
+}
+#button2:hover #tooltip2 {
+  visibility: visible;
+  animation: tooltipAppear 1s linear 1 ;
+}
+#button3 {
+  position: absolute;
+  z-index: 99;
+  display: inline-block;
+  padding: 50px;
+  padding-top: 20px;
+  border-radius: 100px;
+  margin-top: -200px;
+  margin-left: 670px;
+  background-color: transparent;
+  border-style: none;
+}
+#button3 #tooltip3 {
+  visibility: hidden;
+  font-size: 11px;
+  font-family: monospace;
+  color: black;
+  text-align: left;
+  position: absolute;
+  z-index: 1;
+  background-image: url(img/paper.jpeg);
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 160px;
+  margin-top: 100px;
+  margin-left: -110px;
+}
+#button3:hover #tooltip3 {
+  visibility: visible;
+  animation: tooltipAppear 1s linear 1 ;
+}
+#button4 {
+  position: absolute;
+  z-index: 99;
+  display: inline-block;
+  padding: 30px;
+  padding-top: 70px;
+  border-radius: 100px;
+  margin-top: -220px;
+  margin-left: 790px;
+  background-color: transparent;
+  border-style: none;
+}
+#button4 #tooltip4 {
+  visibility: hidden;
+  font-size: 11px;
+  font-family: monospace;
+  color: black;
+  text-align: left;
+  position: absolute;
+  z-index: 1;
+  background-image: url(img/paper.jpeg);
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 200px;
+  margin-top: 75px;
+  margin-left: -120px;
+}
+#button4:hover #tooltip4 {
+  visibility: visible;
+  animation: tooltipAppear 1s linear 1 ;
+}
+#button5 {
+  position: absolute;
+  z-index: 99;
+  display: inline-block;
+  padding: 150px;
+  padding-top: 70px;
+  padding-bottom: 10px;
+  border-radius: 100px;
+  margin-top: -160px;
+  margin-left: 1520px;
+  background-color: transparent;
+  border-style: none;
+}
+#button5 #tooltip5 {
+  visibility: hidden;
+  font-size: 11px;
+  font-family: monospace;
+  color: black;
+  text-align: left;
+  position: absolute;
+  z-index: 1;
+  background-image: url(img/paper.jpeg);
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 75px;
+  margin-top: 50px;
+  margin-left: -70px;
+}
+#button5:hover #tooltip5 {
+  visibility: visible;
+  animation: tooltipAppear 1s linear 1 ;
+}
+#button6 {
+  position: absolute;
+  z-index: 99;
+  display: inline-block;
+  padding: 50px;
+  padding-top: 200px;
+  padding-bottom: 10px;
+  border-radius: 100px;
+  margin-top: -350px;
+  margin-left: 1780px;
+  background-color: transparent;
+  border-style: none;
+}
+#button6 #tooltip6 {
+  visibility: hidden;
+  font-size: 11px;
+  font-family: monospace;
+  color: black;
+  text-align: left;
+  position: absolute;
+  z-index: 1;
+  background-image: url(img/paper.jpeg);
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 150px;
+  margin-top: 30px;
+  margin-left: -130px;
+}
+#button6:hover #tooltip6 {
+  visibility: visible;
+  animation: tooltipAppear 1s linear 1 ;
+}
+#button7 {
+  position: absolute;
+  z-index: 99;
+  display: inline-block;
+  padding: 50px;
+  padding-top: 130px;
+  padding-bottom: 40px;
+  border-radius: 100px;
+  margin-top: -560px;
+  margin-left: 1070px;
+  background-color: transparent;
+  border-style: none;
+}
+#button7 #tooltip7 {
+  visibility: hidden;
+  font-size: 11px;
+  font-family: monospace;
+  color: black;
+  text-align: left;
+  position: absolute;
+  z-index: 1;
+  background-image: url(img/paper.jpeg);
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 150px;
+  margin-top: 60px;
+  margin-left: -100px;
+}
+#button7:hover #tooltip7 {
+  visibility: visible;
+  animation: tooltipAppear 1s linear 1 ;
+}
+#button8 {
+  position: absolute;
+  z-index: 99;
+  display: inline-block;
+  padding: 30px;
+  border-radius: 100px;
+  margin-top: -330px;
+  margin-left: 350px;
+  background-color: transparent;
+  border-style: none;
+}
+#button8 #tooltip8 {
+  visibility: hidden;
+  font-size: 11px;
+  font-family: monospace;
+  color: black;
+  text-align: left;
+  position: absolute;
+  z-index: 1;
+  background-image: url(img/paper.jpeg);
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 150px;
+  margin-top: 60px;
+  margin-left: -100px;
+}
+#button8:hover #tooltip8 {
+  visibility: visible;
+  animation: tooltipAppear 1s linear 1 ;
+}
+#mainTitle {
+  text-align: center;
+  color: rgb(172, 172, 172);
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background-color: rgb(46, 46, 46);
+  width: 110vw;
+  margin-left: -5vw;
+  font-family: 'Coda Caption', 'Bevan', Fallback, sans-serif;
+  margin-top: -10px;
+  font-size: 2em;
+  position: absolute;
+}
+#iconContainer {
+  background-color: rgb(70, 70, 70);
+  color: grey;
+  position: absolute;
+  padding: 9px;
+  padding-bottom: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  font-size: 21px;
+  font-family: 'Coda Caption';
+  border-style: none;
+  margin-top: -700px;
+  margin-left: 1800px;
+}
+#iconContainer:hover {
+  background-color: rgb(46, 46, 46);
+}
+#iconContainer #dossierTooltip {
+  visibility: hidden;
+  color: black;
+  background-image: url(img/paper.jpeg);
+  font-size: 11px;
+  font-family: monospace;
+  padding: 10px;
+  margin-left: -500px;
+  margin-top: -40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  text-align: left;
+  position: absolute;
+  line-height: 20px;
+  z-index: 1;
+}
+#iconContainer:hover #dossierTooltip {
+  visibility: visible;
+  animation: tooltipAppear .5s linear 1 ;
+}
+#dossierTitle {
+  text-align: center;
+  margin-bottom: -5px;
+}
+#iconContainer:hover #dossierTooltip p{
+  margin: 0;
+}
+#kofferClue {
+  font-family: 'Libre Barcode 39 Extended';
+}
+#mesClue {
+  font-family: 'Libre Barcode 39 Extended';
+}
+#zilverClue {
+  font-family: 'Libre Barcode 39 Extended';
+}
+#daderClue {
+  font-family: 'Libre Barcode 39 Extended';
+}
+#fietsClue {
+  font-family: 'Libre Barcode 39 Extended';
+}
+#koffieClue {
+  font-family: 'Libre Barcode 39 Extended';
+}
+#hemdClue {
+  font-family: 'Libre Barcode 39 Extended';
+}
+#telefoonClue {
+  font-family: 'Libre Barcode 39 Extended';
+}
+#missionPara {
+  font-family: monospace;
+  /* background-color: white; */
+  width: 200px;
+  font-size: 11px;
+  padding: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 20px;
+  margin-top: 50px;
+  position: absolute;
+  margin-left: 30px;
+  background-image: url(img/paper.jpeg);
+}
+#missionTitle {
+  text-align: center;
+}
+@keyframes tooltipAppear {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

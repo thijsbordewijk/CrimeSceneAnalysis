@@ -1,11 +1,17 @@
-/* You don't really have to touch this style.css file. Most of the styling of the canvas is controlled via the sketch.js */
+@font-face {
+  font-family: 'ChicagoPolice';
+  src: url('fonts/ChicagoPolice.eot') format('eot'), /* IE9 Compat Modes */
+       url('fonts/ChicagoPolice.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/ChicagoPolice.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/ChicagoPolice.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/ChicagoPolice.eot')  format('truetype'), /* Safari, Android, iOS */
+}
 body {
   background-color: black ;
 }
 #page3 {
   background-color: rgb(46, 46, 46);
 }
-
 #navButton {
   z-index: 99;
   position: absolute;
@@ -19,7 +25,6 @@ body {
   color: black;
   text-decoration: none;
   font-size: 1.2em;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 #navButton:hover {
   background-color: rgb(94, 94, 94);
@@ -28,57 +33,122 @@ i {
   color: white;
 }
 #mainImg  {
-  margin-top: 20px;
-  margin-left: 200px;
+  margin-top: 50px;
+  margin-left: 350px;
 }
 #smokeImg {
-  z-index: -1;
-  margin-top: 200px;
-  margin-left: -2250px;
+  z-index: -99;
+  margin-top: 100px;
+  margin-left: -2050px;
   position: absolute;
 }
-/* :root {
-  cursor: none;
-  --cursorX: 20vw;
-  --cursorY: 20vh;
-}
-:root:before {
-  content: '';
-  display: block;
-  width: 78.2%;
-  height: 78.8%;
-  margin-top: 25px;
-  margin-left: 207px;
-  position: fixed;
-  pointer-events: none;
-  background: radial-gradient(
-    circle 5vmax at var(--cursorX) var(--cursorY),
-    rgba(0,0,0,0) 0%,
-    rgba(0,0,0,.5) 80%,
-    rgba(0,0,0,.95) 100%
-  )
-} */
 #button1 {
   position: absolute;
   z-index: 99;
   display: inline-block;
-  padding: 70px;
+  padding: 50px;
+  padding-bottom: 70px;
   border-radius: 100px;
-  margin-top: 400px;
-  margin-left: -1300px;
+  margin-top: 370px;
+  margin-left: -1025px;
+  background-color: transparent;
+  border-style: none;
 }
-
 #button1 #tooltip1 {
   visibility: hidden;
-  background-color: rgb(49, 49, 49, 0.5);
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 10px 15px ;
+  color: red;
+  font-size: 2em;
+  font-family: monospace;
   position: absolute;
+  font-size: 11px;
   z-index: 1;
 }
-
 #button1:hover #tooltip1 {
   visibility: visible;
+  animation: tooltipAppear 1s linear 1 ;
+}
+#button2 {
+  position: absolute;
+  z-index: 99;
+  display: inline-block;
+  padding: 50px;
+  padding-bottom: 70px;
+  border-radius: 100px;
+  margin-top: 370px;
+  margin-left: -525px;
+  background-color: transparent;
+  border-style: none;
+}
+#button2 #tooltip2 {
+  visibility: hidden;
+  color: red;
+  font-size: 2em;
+  font-family: monospace;
+  position: absolute;
+  font-size: 11px;
+  z-index: 1;
+}
+#button2:hover #tooltip2 {
+  visibility: visible;
+  animation: tooltipAppear 1s linear 1 ;
+}
+#mainTitle {
+  text-align: center;
+  color: black;
+  background-color: yellow;
+  font-family: 'Coda Caption', 'Bevan', Fallback, sans-serif;
+  margin-top: 50px;
+  font-size: 2em;
+}
+#iconContainer {
+  background-color: black;
+  color: white;
+  position: absolute;
+  padding: 20px;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  font-size: 21px;
+  font-family: 'Coda Caption';
+  border-style: none;
+}
+#iconContainer:hover {
+  background-color: rgb(94, 94, 94);
+}
+#iconContainer #dossierTooltip {
+  visibility: hidden;
+  color: black;
+  background-color: white;
+  font-size: 11px;
+  font-family: monospace;
+  padding: 10px;
+  margin-left: -100px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  min-width: 300px;
+  text-align: left;
+  position: absolute;
+  line-height: 20px;
+  z-index: 1;
+}
+#iconContainer:hover #dossierTooltip {
+  visibility: visible;
+  animation: tooltipAppear 1s linear 1 ;
+}
+#dossierTitle {
+  text-align: center;
+  margin-bottom: -5px;
+}
+
+/* #mainPara {
+  text-align: center;
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+} */
+
+@keyframes tooltipAppear {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }

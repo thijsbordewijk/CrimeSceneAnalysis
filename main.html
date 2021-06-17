@@ -5,18 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
   <title>Virtual band</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleMain.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Coda+Caption:wght@800&family=Special+Elite&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended&display=swap" rel="stylesheet"> 
 </head>
 
 <body id="page3" scroll="no" style="overflow: hidden">
-
-  <img id="mainImg" src="img/CSA_img.jpg" width="1485">
+  <h1 id="mainTitle">CRIME SCENE ANALYSIS</h1>
+  <div id="mainContainer">
+  <img id="mainImg" src="img/CSA_img.jpg" width="1920">
+  </div>
   <img id="smokeImg" src="img/smoke.png" width="2500">
+  <button id="iconContainer">
+  <i class="fa fa-archive"></i>
+  <span id="dossierTooltip">
+    <p id="dossierTitle">DOSSIER</p><br />
+    <hr />
+    <p id="liftClue">
+    Achter de lift steekt een informatiehokje uit. Door de cirkel in het glas komen de vragen binnen en gaan de antwoorden naar buiten. </p>
+    <p id="kofferClue"> De drie verlaten rolkoffers zijn van drie toeristen die stonden te wachten op hun beurt. 
+    Een voorbijganger haalde een mes uit zijn tas en stak een van de toeristen in zijn rug.</p>
+    <p id="telefoonClue">De toerist zeeg voor het informatiehokje in elkaar, een mobieltje kletterde op de grond. Aan de voet te zien die achter het informatiehokje uitsteekt, ligt het slachtoffer er nog. 
+    Toen stak de dader een tweede uit het groepje, deze keer in de hand.</p><br />
 
+    <p id="mesClue">Op dat moment verscheen de politie, de dader nam de benen, richting uitgang. 
+    Hij liet zijn mes vallen. Het lijken er wel twee, een grote en een kleine.</p>
+    <p id="zilverClue">De zilverkleurige rolkoffer ernaast werd achtergelaten door een treinreiziger die zich uit de voeten maakte.</p><br />
+
+    <p id="daderClue">Doortastende agenten schoten de dader in zijn benen, een jongeman met een terroristenbaardje.</p>
+    <p id="fietsClue">Achter de pilaar waarvoor hij ligt, staat een fiets. Bij sandwichshop De Broodzaak staat nog zo'n fiets, zelfde stuur, zelfde tassen. </p>
+    <p id="koffieClue">De fietsen horen bij het koffiedrinkende stel. Het zadel van de fiets achter de pilaar staat hoog. Dat past bij de lengte van de man. 
+    Zijn metgezel haalde koffie, hij stond bij de pilaar. Toen de pleuris uitbrak, liet hij zijn fiets achter, hij bracht zichzelf in veiligheid bij De Broodzaak en kreeg zijn koffie. 
+    Laconiek slurpt hij het laatste schuim van zijn cappuccino op, waarbij hij een paar seconden lang het gevaar uit het oog te verliest. 
+    Een schoolvoorbeeld van ontkenning, zo lekker kan schuim niet zijn.</p><br />
+
+    <p id="hemdClue">Nu de vrouw in het witte hemd. Van de omstanders is zij de enige op de plaats delict. 
+Ze zal de derde toerist uit het groepje zijn. Ze heft een hand op, ze vertelt aan de agent over de steekpartij, hoe het tweede slachtoffer in de hand gestoken werd. 
+Het eerste slachtoffer ligt zwaargewond naast haar op de grond, de dader is nog niet geneutraliseerd, maar zij moet en zal haar verhaal kwijt.</p>
+  </span>
+</button>
   <button id="button1">
-    <span id="tooltip1">text 1</span>
+    <span id="tooltip1">Dame met een wit hemd</span>
   </button>
+  <button id="button2">
+    <span id="tooltip2">Drie verlaten rolkoffers</span>
+  </button>
+  <button id="button3">
+    <span id="tooltip3">Twee gevallen messen</span>
+  </button>
+  <button id="button4">
+    <span id="tooltip4">Verlaten zilveren rolkoffer</span>
+  </button>
+  <button id="button5">
+    <span id="tooltip5">De dader</span>
+  </button>
+  <button id="button6">
+    <span id="tooltip6">Achtergelaten fiets</span>
+  </button>
+  <button id="button7">
+    <span id="tooltip7">Koffiedrinkend stel</span>
+  </button>
+  <button id="button8">
+    <span id="tooltip8">Gevallen telefoon</span>
+  </button>
+
+  <div id="missionPara">
+  <p id="missionTitle">MISSIE</p><hr />
+  <p>
+    Kijk goed rond, zoek rond op de plaats delict naar informatie om het dossier op te vullen, je kunt het dossier inzien bij de knop rechtsboven. er zijn 8 clues te vinden op de afbeelding.
+  </p>
+  </div>
 </body>
 
 <script src="script.js"></script>
