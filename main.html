@@ -15,9 +15,10 @@
 <body id="page3" scroll="no" style="overflow: hidden">
   <h1 id="mainTitle">CRIME SCENE ANALYSIS</h1>
   <div id="mainContainer">
-  <img id="mainImg" src="img/CSA_img.jpg" width="1920">
+  <img id="mainImg" src="img/CSA_img_big.jpg" width="1920">
   </div>
   <img id="smokeImg" src="img/smoke.png" width="2500">
+  <p id="dossierAangevuld">Dossier aangevuld!</p>
   <button id="iconContainer">
   <i class="fa fa-archive"></i>
   <span id="dossierTooltip">
@@ -46,38 +47,56 @@ Ze zal de derde toerist uit het groepje zijn. Ze heft een hand op, ze vertelt aa
 Het eerste slachtoffer ligt zwaargewond naast haar op de grond, de dader is nog niet geneutraliseerd, maar zij moet en zal haar verhaal kwijt.</p>
   </span>
 </button>
-  <button id="button1">
+<button id="iconContainerMissie">
+  <i class="fa fa-flag-checkered"></i>
+  <span id="dossierTooltip">
+    <p id="dossierTitle">MISSIE</p><br />
+    <hr />
+    <p>
+      Kijk goed rond, zoek rond op de plaats delict naar informatie om het dossier op te vullen, je kunt het dossier altijd inzien, gebruik de aanvullende informatie om meer clues te vinden. er zijn 8 clues te vinden op de afbeelding.
+    </p>
+  </span>
+</button>
+  <button id="button1" class="butArray">
     <span id="tooltip1">Dame met een wit hemd</span>
   </button>
-  <button id="button2">
+  <button id="button2" class="butArray">
     <span id="tooltip2">Drie verlaten rolkoffers</span>
   </button>
-  <button id="button3">
+  <button id="button3" class="butArray">
     <span id="tooltip3">Twee gevallen messen</span>
   </button>
-  <button id="button4">
+  <button id="button4" class="butArray">
     <span id="tooltip4">Verlaten zilveren rolkoffer</span>
   </button>
-  <button id="button5">
+  <button id="button5" class="butArray">
     <span id="tooltip5">De dader</span>
   </button>
-  <button id="button6">
+  <button id="button6" class="butArray">
     <span id="tooltip6">Achtergelaten fiets</span>
   </button>
-  <button id="button7">
+  <button id="button7" class="butArray">
     <span id="tooltip7">Koffiedrinkend stel</span>
   </button>
-  <button id="button8">
+  <button id="button8" class="butArray">
     <span id="tooltip8">Gevallen telefoon</span>
   </button>
-
-  <div id="missionPara">
-  <p id="missionTitle">MISSIE</p><hr />
-  <p>
-    Kijk goed rond, zoek rond op de plaats delict naar informatie om het dossier op te vullen, je kunt het dossier inzien bij de knop rechtsboven. er zijn 8 clues te vinden op de afbeelding.
-  </p>
-  </div>
+  <div id="boxes">
+    <div style="top: 50%; left: 50%; display: none;" id="dialog" class="window"> 
+    <div id="san">
+    <a href="#" class="close agree"><img src="img/close-icon.png" width="25" style="float:right; margin-right: -25px; margin-top: -20px;"></a>
+    <p id="dossierTitle">MISSIE</p><br />
+    <hr />
+    <p id="missionP">
+      Kijk goed rond, zoek rond op de plaats delict naar informatie om het dossier op te vullen, je kunt het dossier altijd rechtsboven inzien, net als de missie. gebruik de aanvullende informatie om meer clues te vinden. er zijn 8 clues te vinden op de afbeelding.
+    </p>
+    </div>
+    </div>
+    <div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;" id="mask"></div>
+    </div>
+  <img src="img/missieVoltooid.png" id="missieVoltooid">
 </body>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script> 
+<script src="swc.js"></script>
 <script src="script.js"></script>
 </html>
